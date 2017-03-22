@@ -30,6 +30,10 @@ img {
   visibility: hidden;
 }
 
+.show {
+  visibility: visible;
+}
+
 input[type='file'] {
   display: none;
 }

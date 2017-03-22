@@ -14,10 +14,10 @@ class App extends Component {
       scale: null,
       reset: false,
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.handleResetClick = this.handleResetClick.bind(this)
   }
 
-  handleClick() {
+  handleResetClick() {
     this.setState({
       rotate: null,
       translate: null,
@@ -32,14 +32,14 @@ class App extends Component {
       <div className='app'>
         <h1>App</h1>
           <UserPhoto styles={this.state} />
-          <ActionBox title='Available Actions' clickType='available' handleTypeClick={this.handleTypeClick} />
-          <ActionBox title='Applied Actions' clickType='applied' handleTypeClick={this.handleTypeClick} />
+          <ActionBox title='Available Actions' clickType='available' styles={this.state} />
+          <ActionBox title='Applied Actions' clickType='applied' styles={this.state} />
           <div>
             <FontAwesome
               className='reset-bomb'
               name='bomb'
               size='5x'
-              onClick={this.handleClick}
+              onClick={this.handleResetClick}
             />
             <p>Click the bomb to reset everything!</p>
           </div>
