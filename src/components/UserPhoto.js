@@ -31,7 +31,11 @@ export default class UserPhoto extends Component {
     }
     return (
       <div className='user-photo'>
-        {this.state.imagePreview ? <img src={this.state.imagePreview} style={style} alt='presentation'/> : <div>Upload an Image</div>}
+        {
+          this.state.imagePreview ?
+          <img src={this.state.imagePreview} style={style} alt='presentation'/> :
+          <div><p className='upload-text'>Upload an image please</p></div>
+        }
         <div className='file-uploader'>
           <label htmlFor="file-upload" className="custom-upload-button">
               <i className="fa fa-cloud-upload"></i> Choose Image

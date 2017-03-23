@@ -73,3 +73,8 @@ input[type='file'] {
 .applied {
   margin-left: 250px;
 }
+
+.upload-text {
+  font-size: 50px;
+  padding-top: 30%;
+}
