@@ -26,25 +26,16 @@ img {
   left: 350px;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
-.show {
-  visibility: visible;
-}
-
 input[type='file'] {
   display: none;
 }
 
-.rotate-box, .translate-box, .opacity-box, .scale-box {
+.rotate, .translate, .opacity, .scale {
   border: 1px solid black;
-  margin-top: 35px;
   height: 45px;
-  width: 100%;
-  padding-top: 25px;
-  margin-right: 1%;
+  width: 40%;
+  padding-top: 35px;
+  margin-top: 45px;
 }
 
 .user-photo {
@@ -65,4 +56,20 @@ input[type='file'] {
   margin-left: 10%;
   margin-bottom: 4%;
   border: 1px solid black;
+}
+
+.available-title, .applied-title {
+  float: left;
+}
+
+.applied-title {
+  margin-left: 100px;
+}
+
+.title {
+  padding-bottom: 30px;
+}
+
+.applied {
+  margin-left: 250px;
 }

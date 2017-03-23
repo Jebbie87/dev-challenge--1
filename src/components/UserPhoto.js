@@ -24,12 +24,11 @@ export default class UserPhoto extends Component {
   }
 
   render() {
-    const { translate, rotate, opacity, scale, reset } = this.props.styles
+    const { translate, rotate, opacity, scale } = this.props.styles
     const style = {
-      "transform": reset ? 'none' : `${translate} ${rotate} ${scale}`,
-      "opacity": `${opacity}`
+      "transform": (!translate.action && !rotate.action && !scale.action) ? 'none' : `${translate.action} ${rotate.action} ${scale.action}`,
+      "opacity": `${opacity.action}`
     }
-
     return (
       <div className='user-photo'>
         {this.state.imagePreview ? <img src={this.state.imagePreview} style={style} alt='presentation'/> : <div>Upload an Image</div>}
